@@ -1,9 +1,9 @@
-// *************************** YOUR CODE BELOW *******************************
-//******************TEST EARLY AND OFTEN USING console.log() ******************
-//****************** SERIOUSLY TEST USING console.log()!!! ******************
-
-//GLOBAL VARIABLES
-/* global $ */
-
-
-
+let userchoice = "";
+let computerchoice = "";
+let winner = "";
+let randomnumber = 0;
+$(".shoot").click(function() {
+  randomnumber = Math.random();
+  userchoice = $(".input").val();
+  $(".result").text(userchoice) 
+});
